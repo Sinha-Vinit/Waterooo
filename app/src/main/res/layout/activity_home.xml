@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF8FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Welcome -->
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello! 👋"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1268A8"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's keep you hydrated today 💧"
+            android:textSize="15sp"
+            android:textColor="#5F7180"
+            android:layout_marginTop="5dp" />
+
+        <!-- Daily Goal Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/goalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Goal: 2000 ml"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1268A8" />
+
+            <TextView
+                android:id="@+id/consumedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 ml"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                android:textColor="#1479C9"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/remainingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000 ml remaining"
+                android:textSize="15sp"
+                android:textColor="#5F7180"
+                android:layout_marginTop="5dp" />
+
+            <ProgressBar
+                android:id="@+id/waterProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:progress="0"
+                android:max="100"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+        <!-- Quick Add -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Add Water"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginTop="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btn250"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="+250 ml"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#1479C9" />
+
+            <Button
+                android:id="@+id/btn500"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="+500 ml"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#1479C9"
+                android:layout_marginStart="10dp" />
+
+            <Button
+                android:id="@+id/btn750"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="+750 ml"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#1479C9"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+        <!-- Custom Amount -->
+
+        <EditText
+            android:id="@+id/customWaterInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter custom amount (ml)"
+            android:inputType="number"
+            android:padding="15dp"
+            android:backgroundTint="#1479C9"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/addCustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="ADD WATER 💧"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#1479C9"
+            android:layout_marginTop="10dp" />
+
+        <!-- Reminder -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏰ Next Reminder"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1268A8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reminder system coming next..."
+                android:textSize="15sp"
+                android:textColor="#5F7180"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="👤 MY PROFILE"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#1268A8"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="⚙️ SETTINGS"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#1268A8"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp" />
+
+    </LinearLayout>
+
+</ScrollView>
